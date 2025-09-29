@@ -1,78 +1,194 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+<head>
+  <meta charset="UTF-8" />
+  <title>Swathi Vankayalapati Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+                                                                                                               
+<body>
+  <!-- Side Navigation bar-->
+  <nav class="sidemenu">
+    <!-- Hamburger Menu -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="./images/images/account.png" alt="profile symbol" />
+      <h3>Swathi Vankayalapati</h3>
+      <a href="#about" alt="About">Home</a>
+      <a href="#summary" alt="Summary">Summary</a>
+      <a href="#education" alt="Education">Education</a>
+      <a href="#skills" alt="Skills">Skills</a>
+      <a href="#projects" alt="projects"> Projects</a>
+      <div class="icons">
+        <a href="https://github.com/Swathi-Vankayalapati"><img src="./images/images/github.svg" alt="Github logo" /></a>
+        <a href="https://www.linkedin.com/in/swathi-vankayalapati"><img src=".\images\images\linkedin.svg"
+            alt="linkedlin logo" /></a>
+        <a href="mailto:swathinalamothu174@gmail.com"><img src=".\images\images\gmail.svg" alt="Gmail logo" /></a>
+      </div>
+    </div>
+  </nav>
 
-<!-- TODO 4: Add titles/subtitles etc. -->
+  <!--Horizontal Navigation bar-->
+  <nav>
+    <header class="horizontal-menu">
+      <div>
+        <a href="#about" alt="About">Home</a>
+        <a href="#summary" alt="Summary">Summary</a>
+        <a href="#education" alt="Education">Education</a>
+        <a href="#skills" alt="Skills">Skills</a>
+        <a href="#projects" alt="projects"> Projects</a>
+      </div>
+    </header>
+  </nav>
 
-<!-- TODO 5: Add a link to the project pages -->
+  <!-- About Content -->
+  <section id="about">
+    <div>
+      <img class="profile-img" src="./images/images/Swathi_vankayalapati.jpeg" alt="Swathi Profile" />
+      <h1>Hello...</h1>
+      <h2>This is Swathi Vankayalapati</h2>
+      <p>I am Professional</p>
+      <ul>
+        <li>Web Developer</li>
+        <li>Full Stack Developer</li>
+        <li>Software Engineer</li>
+      </ul>
+      <button class="btn">
+        <a href="./contents/Swathi_Vankayalapati_CV.pdf"> View Resume </a>
+      </button>
+    </div>
+  </section>
+  <hr />
 
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+  <!-- Summary Info -->
+  <section class="summary_content" id="summary">
+    <h1>Summary</h1>
+    <div class="card">
+      <div class="align">
+        <h1>3+</h1>
+        <p>Experience</p>
+      </div>
+      <div class="align">
+        <h1>2</h1>
+        <p>Projects</p>
+      </div>
+      <div class="align">
+        <h1>1</h1>
+        <p>company</p>
+      </div>
+    </div>
+  </section>
+  <hr />
 
-<!-- TODO 7: Add the Contact Me and About Me page links -->
- <!DOCTYPE html>
- <httml lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Swathi Vankayalapati Portfolio</title>
-    </head>
-    <body>
-        <h1>Hello, This is Swathi Vankayalapati. I am Professional software developer</h1>
-        <hr>
+  <!-- Education Info -->
+  <section id="education">
+    <h1>Education</h1>
 
-        <section >
-            <h1>Summary</h1>
-            <div style="display: inline-block; margin-right: 20px;">
-                <h1>3+</h1>
-                <p>Experience</p>
-            </div>
-            <div style="display: inline-block; margin-right: 20px;">
-                <h1>1</h1>
-                <p>Project</p>
-            </div>
-            <hr/>
-        </section>
+    <input type="radio" id="btech" name="edu" checked />
+    <label for="btech">Bachelor of Technology</label>
+    <div class="edu-content">
+      <ul>
+        <li>College : <b>Prakasam Engineering College (2017-2021)</b></li>
+        <li>Branch : <b>Computer Science and Engineering</b></li>
+        <li>percentage : <b>74%</b></li>
+      </ul>
+    </div>
 
-        <section>
-            <h1>Education</h1>
-            <div>
-                <a href="./contents/Bachelor-of-Technology.html">Bachelor of Technology</a>
-           </div>
-            <div>
-                <a href="./contents/Intermediate.html">Intermediate</a>
-           </div>
-        </section>
-        <hr/>
+    <input type="radio" id="intermediate" name="edu" />
+    <label for="intermediate">Intermediate</label>
+    <div class="edu-content">
+      <ul>
+        <li>College : <b>Sri Chaitanya Junior College (2015-2017)</b></li>
+        <li>Branch : <b>MPC</b></li>
+        <li>percentage : <b>96.2%</b></li>
+      </ul>
+    </div>
 
-        <section>
-            <div>
-               <h1>Languages</h1>
-            <!--   <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 logo" height="50" /> -->
-               <img src="./images/images/HTML5_logo.svg" alt="HTML5 logo" height="50" />
-               <img src="./images/images/CSS3_logo.svg" alt="CSS3 logo" height="50"/>
-            </div>
-            <div>
-                <h1>Databases</h1>
-                <img src="./images/images/mysql_logo.svg" alt="My sql logo" />
-            </div>
-            <div>
-                <h1>Tools</h1>
-                <img src="./images/images/Eclipse-Logo.svg" height="25" hspace="15"/>
-                <img src="./images/images/Visual_Studio_Code__logo.svg" height="25" />
-            </div>
-        </section>
-        <hr/>
+    <input type="radio" id="highschool" name="edu" />
+    <label for="highschool">School</label>
+    <div class="edu-content">
+      <ul>
+        <li>School : <b>V.T High School (2014-2015)</b></li>
+        <li>CGPA : <b>8.0</b></li>
+      </ul>
+    </div>
+  </section>
+  <hr />
 
-        <section>
-            <h1>Projects</h1>
-            <div>
-                <h3>Storage Resource Management</h3>
-                <p>Designed for Monitoring</p>
-                <a href="./contents/Storage-Resource-Management.html"> <button>View Details</button></a>
-            </div>
-        </section>
-    </body>
- </httml>
+  <!-- Skills Info -->
+  <section id="skills">
+    <h1>Skills</h1>
+    <div class="card">
+      <div id="lang">
+        <h2>Languages</h2>
+        <!--   <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 logo" height="50" /> -->
+        <img src="./images/images/HTML5_logo.svg" alt="HTML5 logo" />
+        <img src="./images/images/CSS3_logo.svg" alt="CSS3 logo" />
+        <img src="./images/images/JavaScript_logo.svg" alt="JavaScript logo" />
+        <img src="./images/images/Java_logo.svg" alt="Java logo" />
+      </div>
+      <div id="database">
+        <h2>Database</h2>
+        <img src="./images/images/mysql_logo.svg" alt="My sql logo" />
+      </div>
+      <div id="server">
+        <h2>Server</h2>
+        <img src="./images/images/apache_tomcat_logo.svg" alt="Apache tomcat logo" />
+      </div>
+      <div id="tools">
+        <h2>Tools</h2>
+        <img src="./images/images/Eclipse-Logo.svg" />
+        <img src="./images/images/Visual_Studio_Code__logo.svg" />
+        <img src="./images/images/Notepad_logo.svg" alt="Notepad logo" />
+        <img src="./images/images/Postman-icon.svg" alt="Notepad logo" />
+        <img src="./images/images/github.svg" alt="Github logo" />
+        <img src="./images/images/git_logo.svg" alt="Git logo" />
+        <img src="./images/images/WinSCP_Logo.png" alt="WinSCP logo" />
+        <img src="./images/images/PuTTY_Icon.svg" alt="WinSCP logo" />
+      </div>
+    </div>
+  </section>
+  <hr />
+
+  <!-- Projects Info -->
+  <section id="projects">
+    <h1>Projects</h1>
+    <div class="card">
+      <div>
+        <h3>Storage Resource Management - Tool Development</h3>
+        <p>Designed for Monitoring</p>
+        <button class="btn">
+          <a href="./contents/SRM_Tool_Development.html">View Details</a>
+        </button>
+      </div>
+      <div>
+        <h3>Storage Resource Management - Monitoring</h3>
+        <p>Designed for Monitoring</p>
+        <button class="btn">
+          <a href="./contents/Storage-Resource-Management.html">View Details</a>
+        </button>
+      </div>
+    </div>
+  </section>
+  <hr />
+
+  <!-- Footer section-->
+  <footer>
+    <div>
+      <h3>Swathi Vankayalapati</h3>
+      <a href="https://github.com/Swathi-Vankayalapati"><img src="./images/images/github.svg" alt="Github logo" /></a>
+      <a href="https://www.linkedin.com/in/swathi-vankayalapati"><img src=".\images\images\linkedin.svg"
+          alt="linkedlin logo" /></a>
+      <a href="mailto:swathinalamothu174@gmail.com"><img src=".\images\images\gmail.svg" alt="Gmail logo" /></a>
+    </div>
+  </footer>
+</body>
+
+</html>

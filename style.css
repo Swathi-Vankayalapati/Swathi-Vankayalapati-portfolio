@@ -1,0 +1,246 @@
+body {
+  background-color: #FFF2EF;
+}
+
+/* Common code */
+button {
+  background-color: #007bff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button>a {
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  box-shadow: 1px 1px 5px;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+/* Horizontal Navigation bar */
+header {
+  background-color: #007bff;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+}
+
+header div a {
+  color: white;
+  text-decoration: none;
+  float: right;
+  padding: 20px;
+
+}
+
+/* About Content */
+#about {
+  margin-top: 100px;
+  height: 280px;
+}
+
+#about img {
+  float: right;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+/* Summary Info */
+#summary h1 {
+  text-align: center;
+}
+
+.align {
+  display: inline-block;
+  margin-left: 175px;
+  margin-right: 150px;
+  text-align: center;
+}
+
+/* Education Info */
+#education {
+  width: 600px;
+  margin: auto;
+}
+
+#education h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[name="edu"] {
+  display: none;
+}
+
+label {
+  display: block;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  margin-bottom: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.edu-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 12px;
+  background: #f1f1f1;
+  line-height: 1.8;
+}
+
+input[name="edu"]:checked+label+.edu-content {
+  max-height: 200px;
+  padding: 12px;
+}
+
+/* Skills Info */
+#skills h1 {
+  text-align: center;
+}
+
+#lang img {
+  display: inline-block;
+  height: 60px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+#database img {
+  display: inline-block;
+  height: 50px;
+  margin-right: 20px;
+}
+
+#tools img {
+  display: inline-block;
+  height: 30px;
+  margin-right: 20px;
+}
+
+/* Projects Info */
+#projects h1 {
+  text-align: center;
+}
+
+/* Footer Info */
+footer {
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+footer>div>a>img {
+  width: 25px;
+  margin-right: 5px;
+
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width : 768px) {
+  header {
+    display: none;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: green;
+    margin: 3px 0;
+    border-radius: 2px;
+  }
+
+  /* Hamburger menu */
+  .hamburger {
+    position: static;
+    top: 0;
+    cursor: pointer;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    left: -200px;
+    /* hidden by default */
+    background: blue;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .sidebar img {
+    width: 50px;
+    position: static;
+    top: 0px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .sidebar a:hover {
+    color: black;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons a img {
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  /* Show sidebar on hover of hamburger */
+  .hamburger:hover+.sidebar,
+  .sidebar:hover {
+    left: 0;
+  }
+
+  #about img {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #about {
+    height: auto;
+    margin: 0;
+  }
+
+  .summary_content .align {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width : 769px) {
+  .sidemenu {
+    display: none;
+  }
+}
